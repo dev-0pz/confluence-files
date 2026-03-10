@@ -77,7 +77,6 @@ YAML
 echo "Applying manifests in order..."
 kubectl apply --validate=false -f gatewayclass.yaml
 kubectl apply --validate=false -f gateway.yaml
-kubectl apply --validate=false -f envoyproxy.yaml
 kubectl apply --validate=false -f httproute.yaml
 
 echo "Done."
